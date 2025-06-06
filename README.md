@@ -40,7 +40,7 @@ This project builds directly on the work of the original authors of the models a
 │
 ├── EVALUATION SCRIPTS
 │   ├── evaluate_quantitative_metrics.py  # For NIQE, PIQE, BRISQUE
-│   └── run_siqs_evaluation.py            # For LLM-based qualitative scores
+│   └── run_siqs_evaluation.py            # For LLM-based quantitative scores
 │
 ├── DATA & MODELS
 │   ├── beehive_dataset/          # Raw Beehive images
