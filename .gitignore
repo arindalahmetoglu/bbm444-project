@@ -1,0 +1,67 @@
+# ==============================================================================
+# Git Ignore File
+#
+# This file tells Git which files and directories to intentionally ignore.
+# It's used to prevent generated files, large datasets, and sensitive
+# information from being committed to the repository.
+# ==============================================================================
+
+# --- System / Editor Files ---
+# Ignore OS-generated files
+.DS_Store
+Thumbs.db
+# Ignore editor-specific files
+.vscode/
+.idea/
+# Ignore temporary swap files
+*.swp
+*.swo
+
+# --- Python ---
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# --- Project-specific ---
+
+# Ignore large datasets.
+# The README.md provides instructions on where to download them.
+/beehive_dataset/
+/UDIS-D/
+
+# Ignore generated data, results, and logs.
+# These directories are created by the scripts when you run the workflows.
+/processing_data/
+/results/
+/beehive_results_metrics/
+/udis_d_results_metrics/
+/siqs_evaluation_results/
+# This was another intermediate results folder used by older scripts
+/global_stitching_results/
+
+# Ignore specific model files, but keep the directory structure.
+# The README explains where to download and place these pre-trained models.
+# Note: We will add .gitkeep files to these directories so Git tracks them.
+/NIS/pretrained/*.pth
+/UDIS/ImageReconstruction/Codes/checkpoints/*
+/UDIS++/Composition/model/*.pth
+
+# Ignore temporary directories created by scripts at runtime.
+temp_sift*
+
+# Ignore temporary backup files created by 'sed'
+*.sedbak
+
+# Ignore old/unused directories from development
+/IMPORTANT_ALL_DIRECTORIES_1/
+/IMPORTANT_ALL_SCRIPTS_1/
+/unused/
+/STB/
+/BasicSR/
+
+# Ignore large documents that don't belong in the repo
+*.pdf
+
+# Ignore environment files that might contain secrets
+.env
+*.env 
