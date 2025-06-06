@@ -122,7 +122,7 @@ python evaluate_quantitative_metrics.py results/udis_d_results --dataset udis-d
 python evaluate_quantitative_metrics.py results/beehive_results --dataset beehive
 ```
 
-### 2. Qualitative Metrics (SIQS with GPT-4)
+### 2. Quantitaive Metric (SIQS with GPT-4)
 
 This requires a valid OpenAI API key.
 
@@ -137,4 +137,3 @@ python run_siqs_evaluation.py results/udis_d_results --dataset udis-d
 python run_siqs_evaluation.py results/beehive_results --dataset beehive
 ```
 
-## 📖 Citation
